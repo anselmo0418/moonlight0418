@@ -131,30 +131,17 @@ try {
     </script>
 
     <!-- 20181119 통합 트래픽 GA코드 추가  -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-24472307-90">
-		window.dataLayer = window.dataLayer || [];
-			  function gtag(){dataLayer.push(arguments);}
-			  gtag('js', new Date());
-			  gtag('config', 'UA-24472307-90', {
-			  'custom_map': {
-					'dimension1': 'category',
-					'dimension2': 'code',
-					'dimension3': 'author',
-					'dimension4': 'date',
-					'dimension5': 'image',
-					'dimension6': 'length'
-			  },
-			  'linker': {
-				'domains': ['mk.co.kr', 'news.mk.co.kr', 'opinion.mk.co.kr', 'premium.mk.co.kr', 'star.mk.co.kr', 'sports.mk.co.kr', 'game.mk.co.kr', 'pulsenews.co.kr', 'uberin.mk.co.kr', 'mkbn.mk.co.kr', 'raythep.mk.co.kr',
-					 'vip.mk.co.kr', 'estate.mk.co.kr', 'mplay.mk.co.kr', 'm.mk.co.kr', 'm.pulsenews.co.kr', 'm.raythep.com', 'raythe.mk.co.kr', 'photos.mk.co.kr', 'www.mk.co.kr']
-			  }
-			});
-	    gtag('event', 'news_category', {'category': dimension, 'code': dimension2, 'author' : dimension3, 'date': dimension4, 'image' : dimension5, 'length': dimension6,
-		'non_interaction': true
-		});
-    });
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-24472307-90"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-</script>
+      gtag('config', 'UA-24472307-90');
+    </script>
+
+
 
 <!-- 20181119 통합 트래픽 GA코드 추가  -->    <!-- Dable 스크립트 시작 / 문의 support@dable.io -->
     <script>
