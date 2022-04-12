@@ -1,170 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>차트테스트</title>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <style>
+      #container{
+        position: relative;
+      }
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html lang="ko">
-<head>
-  ​
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-WK4T24T');</script>
-  <!-- End Google Tag Manager -->
+      #piechart{width: 900px; height: 500px;}
 
-    <meta http-equiv="Content-Type" content="text/html; charset=euc-kr">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=880">
-    <meta http-equiv="Content-Script-Type" content="text/javascript">
-    <meta http-equiv="Content-Style-Type" content="text/css">
-    <title>MK::XCoinFrame</title>
-    <link rel="stylesheet" type="text/css" href="https://common.mk.co.kr/common/css/2016/main/main.css">
-    <script src="js/XCoinLoder.js?ver=20201126" type="text/javascript" charset="utf-8"></script>
+      #overlay {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        top: 110px;
+        left: 110px;
+        border-radius: 40px;
+      }
+    </style>
 
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
 
-</head>
-<body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WK4T24T"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  ​
-<div class="right_bx">
-    <h2 class='h2_tit'>
-        <a target='_parent' href='https://www.mk.co.kr/news/crypto-currency/' alt='암호화폐 시세 더보기' title='암호화폐 시세 더보기'
-           ga-evnt-ctg="page:메인" ga-evnt-act="section:암호화폐" ga-evnt-idx="암호화폐시세">
-            <span class='tit'>암호화폐 시세</span></a>
+      function drawChart() {
 
-		<a href="https://dstreet.io/" target="_blank" class="tit_l" ga-evnt-ctg="page:메인" ga-evnt-act="section:암호화폐" ga-evnt-idx="dstreet">
-		<img src="https://img.mk.co.kr/main/2019/l_dstreet.png" alt="디스트리트">
-		</a>
-    </h2>
-    <!--<div class="coin_page_num">
-			<span class="count_num"> <em>1</em>/2
-			</span>
-        <button type="button" class="btn_prev" onclick="ga('send', 'event', 'cryptocurrency', 'click', 'coin')">
-            <span class="hidden">이전 코인리스트</span>
-        </button>
-        <button type="button" class="btn_next" onclick="ga('send', 'event', 'cryptocurrency', 'click', 'coin')">
-            <span class="hidden">다음 코인리스트</span>
-        </button>
-    </div>-->
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Work',     11],
+          ['Eat',      2],
+          ['Commute',  2],
+          ['Watch TV', 2],
+          ['Sleep',    7]
+        ]);
 
-    <!-- 코인 선택 -->
-    <div class="coin_list_wrap">
+        var options = {
+          pieHole: 0.41,  // 도넛차트
+          chartArea: {
+            /* 차트크기 */
+            width: 200,
+            height: 200
+          },
+          /* 전체크기 */
+          width: 300,
+          height: 300,
 
-        <!-- 첫번째 코인 리스트 -->
-        <ul class="coin_list_main" ondragstart="return false">
-            <li class="on"><a href="javascript:" id="BTC" class="coin_link"
-                              ga-evnt-ctg="page:메인" ga-evnt-act="section:암호화폐" ga-evnt-idx="비트코인"> <span class="coin_icon"><img
-                    src="https://img.mk.co.kr/mtech/ico_btc_on.png" alt="비트코인 아이콘"/></span> <strong class="coin_tit">비트코인</strong>
-            </a></li>
-            <li><a href="javascript:" id="ETH" class="coin_link"
-                   ga-evnt-ctg="page:메인" ga-evnt-act="section:암호화폐" ga-evnt-idx="이더리움"> <span class="coin_icon"><img
-                    src="https://img.mk.co.kr/mtech/ico_eth_off.png" alt="이더리움 아이콘"/></span> <strong class="coin_tit">이더리움</strong>
-            </a></li>
-            <li><a href="javascript:" id="XRP" class="coin_link"
-                   ga-evnt-ctg="page:메인" ga-evnt-act="section:암호화폐" ga-evnt-idx="리플"> <span class="coin_icon"><img
-                    src="https://img.mk.co.kr/mtech/ico_xrp_off.png" alt="리플 아이콘"/></span> <strong
-                    class="coin_tit">리플</strong>
-            </a></li>
-            <li><a href="javascript:" id="BCH" class="coin_link"
-                   ga-evnt-ctg="page:메인" ga-evnt-act="section:암호화폐" ga-evnt-idx="비트코인캐시"> <span class="coin_icon"><img
-                    src="https://img.mk.co.kr/mtech/ico_bcc_off.png" alt="비트코인 캐시 아이콘"/></span> <strong
-                    class="coin_tit">비트코인 캐시</strong>
-            </a></li>
-            <li><a href="javascript:" id="LTC" class="coin_link"
-                   ga-evnt-ctg="page:메인" ga-evnt-act="section:암호화폐" ga-evnt-idx="라이트코인"> <span class="coin_icon"><img
-                    src="https://img.mk.co.kr/mtech/ico_ltc_off.png" alt="라이트코인 아이콘"/></span> <strong class="coin_tit">라이트코인</strong>
-            </a></li>
-            <li><a href="javascript:" id="EOS" class="coin_link"
-                   ga-evnt-ctg="page:메인" ga-evnt-act="section:암호화폐" ga-evnt-idx="이오스"> <span class="coin_icon"><img
-                    src="https://img.mk.co.kr/mtech/ico_eos_off.png" alt="이오스 아이콘"/></span> <strong
-                    class="coin_tit">이오스</strong>
-            </a></li>
-        </ul>
-        <!-- //첫번째 코인 리스트 -->
+          /* 차트에 레이블 표시 (percentage, value or label)*/
+          pieSliceText: 'label',
 
-        <!-- 2020.06.18 훈정과장 요청으로 코인 종목 및 페이지 제거 by dyddns -->
-        <!-- 두번째 코인 리스트 -->
-        <!--<ul class="coin_list_main" style="display: none" ondragstart="return false">
-            <li><a href="javascript:" id="XMR" class="coin_link"
-                   onclick="ga('send', 'event', 'cryptocurrency', 'click', 'coin')"> <span class="coin_icon"><img
-                    src="https://img.mk.co.kr/mtech/ico_xmr_off.png" alt="모네로 아이콘"/></span> <strong
-                    class="coin_tit">모네로</strong>
-            </a></li>
-            <li><a href="javascript:" id="DASH" class="coin_link"
-                   onclick="ga('send', 'event', 'cryptocurrency', 'click', 'coin')"> <span class="coin_icon"><img
-                    src="https://img.mk.co.kr/mtech/ico_dash_off.png" alt="대시 아이콘"/></span> <strong
-                    class="coin_tit">대시</strong>
-            </a></li>
-            <li><a href="javascript:" id="ETC" class="coin_link"
-                   onclick="ga('send', 'event', 'cryptocurrency', 'click', 'coin')"> <span class="coin_icon"><img
-                    src="https://img.mk.co.kr/mtech/ico_etc_off.png" alt="이더리움 클래식 아이콘"/></span> <strong
-                    class="coin_tit">이더리움 클래식</strong>
-            </a></li>
-            <li><a href="javascript:" id="QTUM" class="coin_link"
-                   onclick="ga('send', 'event', 'cryptocurrency', 'click', 'coin')"> <span class="coin_icon"><img
-                    src="https://img.mk.co.kr/mtech/ico_qtum_off.png" alt="퀀텀 아이콘"/></span> <strong
-                    class="coin_tit">퀀텀</strong>
-            </a></li>
-            <li><a href="javascript:" id="VET" class="coin_link"
-                   onclick="ga('send', 'event', 'cryptocurrency', 'click', 'coin')"> <span class="coin_icon"><img
-                    src="https://img.mk.co.kr/mtech/ico_zec_off.png" alt="비체인 아이콘"/></span> <strong
-                    class="coin_tit">비체인</strong>
-            </a></li>
-            <li><a href="javascript:" id="ADA" class="coin_link"
-                   onclick="ga('send', 'event', 'cryptocurrency', 'click', 'coin')"> <span class="coin_icon"><img
-                    src="https://img.mk.co.kr/mtech/ico_ada_off.png" alt="에이다 아이콘"/></span> <strong
-                    class="coin_tit">에이다</strong>
-            </a></li>
-        </ul>-->
-        <!-- //두번째 코인 리스트 -->
-    </div>
-    <!-- 거래소 시세 -->
-    <span class="coin_info2"> 제공 : <a target="_blank" href="https://upbit.onelink.me/dH32/c011c90f"
-                                      ga-evnt-ctg="page:메인" ga-evnt-act="section:암호화폐" ga-evnt-idx="업비트">업비트</a>
-        <span class="bar">ㅣ</span>  <a target="_blank"
-                                       href="https://www.bithumb.com/?utm_campaign=kr&utm_source=mk&utm_medium=other&utm_content=marketprice"
-                                       ga-evnt-ctg="page:메인" ga-evnt-act="section:암호화폐" ga-evnt-idx="빗썸">빗썸</a>
-        <span class="bar">ㅣ</span> <a target="_blank" href="https://coinone.co.kr/"
-                                      ga-evnt-ctg="page:메인" ga-evnt-act="section:암호화폐" ga-evnt-idx="코인원">코인원</a></span>
-    <table class="tbl_coin_main" border="0" cellpadding="0" cellspacing="0" summary="거래소 시세 정보">
-        <caption>거래소 시세 정보</caption>
-        <colgroup>
-            <col style='width: 70px'>
-            <col style='width: 90px'>
-            <col style=''>
-        </colgroup>
-        <tbody>
-        <tr id="upbit">
-            <th scope="row">업비트<span class="time_info2">00.00 00:00</span></th>
-            <td class="price_fluc_down">
-                <strong>-</strong>
-            </td>
-            <td class="rate_fluc_down">-</td>
-        </tr>
+          /* 꼬리표 제거 */
+          legend: 'none'
+        };
 
-        <tr id="bithumb">
-            <th scope="row">빗썸<span class="time_info2">00.00 00:00</span></th>
-            <td class="price_fluc_down">
-                <strong>-</strong>
-            </td>
-            <td class="rate_fluc_down">-</td>
-        </tr>
-        <tr id="coinone">
-            <th scope="row">코인원<span class="time_info2">00.00 00:00</span></th>
-            <td class="price_fluc_up">
-                <strong>-</strong>
-            </td>
-            <td class="rate_fluc_up">-</td>
-        </tr>
-        </tbody>
-    </table>
-    <!-- //거래소 시세 -->
-    <div class="tbl_data">
-        <span class="time_info3">등락률 : 24h 기준 | 단위 : 원 </span>
-    </div>
-</div>
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
 
-</body>
+        chart.draw(data, options);
+      }
+    </script>
+
+    </head>
+    <body>
+      <div id="container">
+        <div id="piechart"></div>
+        <img id="overlay" src="https://ddragon.leagueoflegends.com/cdn/11.4.1/img/champion/Shen.png">
+      </div>
+    </body>
 </html>
