@@ -484,7 +484,7 @@ min-width:50px ;max-width: 125px;}
 .battle_base .result_1 .pic_pred {width:90px; height: 90px; box-sizing: border-box; margin: 0 auto;}
 .battle_base .result_1 .pic_pred img {width:85px; height: 85px; box-sizing: border-box;}
 .battle_base .result_1 li .ft20 {font-size: 20px; font-weight: 700; display: block; }
-.battle_base .result_1 li .dn {width: 120px; font-size: 14.5px; height: 40px;
+.battle_base .result_1 li .dn {width: 100%; font-size: 14.5px; height: 40px;
     font-weight: 700; color: #e61e2b;  display: block; position: absolute;
     width: 120px; height: 40px;  position: absolute; left: 50%; transform: translate(-50%);}
 .battle_base .result_1 li .dangname1 {color: #e61e2b; }
