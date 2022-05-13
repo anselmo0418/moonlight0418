@@ -1,0 +1,518 @@
+@charset "euc-kr";
+@import url('https://file.mk.co.kr/include/css/notosanskr.css');
+
+
+#election_2022 {position:relative;clear:both;width:1098px;margin:10px auto 10px!important;text-align:left;border:1px solid #c8c8c8; font-family:'Noto Sans KR'; }
+#election_2022 .top_cont{padding:10px 30px; background-color:#f0f4fb;letter-spacing:-0.05em; overflow: hidden; margin-top:0; clear:both; position: relative}
+#election_2022 .top_cont h2{display:block;float:left;padding:5px 5px 0 0;color:#000; font-size:15px}
+#election_2022 .top_cont .vote_percent{display:block;float:left;padding:12px 7px 0 0;font-size:19px;color:#3542f8; letter-spacing:normal; font-weight:700}
+#election_2022 .top_cont .vote_percent2{display:block;float:left;padding:13px 7px 0 0;font-size:17px;color:#3542f8; letter-spacing:normal; font-weight:700}
+#election_2022 .top_cont .vote_end{display:block;float:left;margin-top:4px;font-size:12px;color:#fff;font-weight:700;padding:3px 9px 5px;border-radius:13px;background-color:#4a5760}
+#election_2022  .top_stxt{display:block;float:left;margin-top:13px;padding-right:8px;font-size:12px;color:#777}
+#election_2022 .bt_elect_list{overflow:hidden; position:absolute; top:9px; right:76px}
+#election_2022 .bt_elect_list li{float:left;margin-left:7px;font-size:13px}
+#election_2022 .bt_elect_list2{overflow:hidden; position:absolute; top:24px; right:46px}
+#election_2022 .bt_elect_list2 li{float:left;margin-left:7px;font-size:13px}
+#election_2022 .bt_elect2017{padding:7px 14px 7px 33px; background:#fff url(//img.mk.co.kr/2017/election/bg_elect2017_bt.png) no-repeat 12px 8px; border:1px solid #d6d6d6}
+#election_2022 .bt_elect2017_mbn{padding:7px 14px 7px 53px; background:#fff url(//img.mk.co.kr/2017/election/bg_elect2017_bt2.png) no-repeat 10px 7px; border:1px solid #d6d6d6}
+#election_2022 .middle_cont{padding:20px 30px 14px; letter-spacing:-0.05em;border-top:1px solid #c8c8c8}
+#election_2022 .middle_cont h3{margin-bottom:12px;font-size:12px;color:#000}
+#election_2022 .middle_cont .h3_stxt{font-size:12px;color:#535353;font-weight:400;letter-spacing:normal}
+#election_2022 .middle_cont .graph_wrap{position:relative;height:140px;text-align:center}
+#election_2022 .middle_cont2{position:relative;height:191px;border-top:1px solid #c8c8c8}
+#election_2022 .bottom_cont{position:relative;height:50px; background-color:#f0f5f9; color:#494949}
+#election_2022 .bottom_cont h3{position:absolute;top:10px;left:28px;width:68px;font-size:12px;font-weight:400;letter-spacing:-0.05em}
+#election_2022 .bottom_cont2{position:relative;height:78px; background-color:#f0f5f9; color:#494949}
+#election_2022 .graphlist_last{overflow:hidden;position:absolute;top:18px;left:82px;width:1037px}
+#election_2022 .graphlist_last li{float:left;width:58px;text-align:center;font-size:13px}
+#election_2022 .cont_wrap{overflow:hidden; float:left; width:777px; border-right:1px solid #c8c8c8}
+#election_2022 .map_wrap{overflow:hidden; floatfloat:right;width:320px; height:320px}
+#election_2022 .vote_compare{position:absolute;top:10px;left:270px;width:237px;height:175px}
+#election_2022 .bt_elect_close{position:absolute; top:-1px; right:-1px; width:52px; height:24px}
+#election_2022 .bt_elect_open{position:absolute; top:-1px; right:-1px; width:52px; height:24px}
+
+#election_2022 .bottom_cont1	{ background: #f0f4fb; position:relative; clear: both; padding: 10px 30px 0 30px}
+#election_2022 .top_cont .select_vote1 {background: #65628b; padding:15px  9px; font-size: 14px; color: #fff; position: absolute;  top: 0; right: 0;  display:block; cursor:pointer;z-index:100000002; font-weight: 700  }
+#election_2022 .top_cont .select_vote1 a:link {color: #fff}
+#election_2022 .top_cont .select_vote1 a:hover {color: #fff}
+#election_2022 .top_cont .select_vote1 a:visited {color: #fff}
+#election_2022 .sel_tabmenu {background-color:#ffffff;  width:100%; clear:both; height:43px;  overflow:hidden}
+#election_2022 .sel_tabmenu .tabs {position:relative; width:100%}
+#election_2022 .sel_tabmenu .tabs li {float:left}
+#election_2022 .sel_tabmenu .tabs li:last-child {float:right}
+
+#election_2022 .table_elect { width: 100%; margin: 0 auto ;  }
+#election_2022 .table_elect th { background: #65628b; font-size: 12px; color: white; padding: 10px; text-align: center; font-family:'Noto Sans KR'}
+#election_2022 .table_elect td { background: #fff; font-size: 12px; padding: 10px; text-align: center; font-family:'Noto Sans KR' }
+#election_2022 .top_cont .close_btn { position: absolute;  top: 0; right: 0;  display:block; cursor:pointer;z-index:100000002;  }
+
+#election_2022 .table_elect2 { width: 100%; margin: 0 auto ;  }
+#election_2022 .table_elect2 th { background: #65628b; font-size: 13px; color: white; padding: 5px 10px; text-align: center; font-family:'Noto Sans KR'}
+#election_2022 .table_elect2 td { background: #fff; font-size: 13px; padding: 5px 10px; text-align: center; border-left: 1px solid #d6d5e1; border-right: 1px solid #d6d5e1; font-family:'Noto Sans KR' }
+#election_2022 .table_elect2 td:first-child { border-left:none}
+#election_2022 .table_elect2 td:last-child { border-right:none}
+
+.top_cont	.battles  {width:100%; background:#fff; border-radius:10px; overflow:hidden}
+.top_cont	.battles  .bt_box {padding:15px; position:relative; overflow:hidden}
+.top_cont	.battles  .bt_box .table_battle {margin:0 auto; width:96%; font-family:'Noto Sans KR'; }
+.top_cont	.battles  .bt_box .table_battle .bt1 {text-align:center;width:150px;vertical-align: middle}
+.top_cont	.battles  .bt_box .table_battle .bt2 {vertical-align: middle;  }
+.top_cont	.battles  .bt_box .table_battle .bt2 .r_price {position:relative; overflow:hidden;  padding-bottom:10px; margin-left: 15px; margin-right: 15px}
+.top_cont	.battles  .bt_box .table_battle .bt2 .r_price li {float:left}
+.top_cont	.battles  .bt_box .table_battle .bt2 .r_price li:last-child {float:right; text-align:right}
+.top_cont	.battles  .bt_box .table_battle .bt2 .r_price  .ft_1 {font-size:12px; color:#666666}
+.top_cont	.battles  .bt_box .table_battle .bt2 .r_price  .f_name {font-size:27px; font-weight:700; font-family:'Noto Sans KR';}
+.top_cont	.battles  .bt_box .table_battle .bt2 .r_price  .f_dang {font-size:16px; font-weight:700; color:#535353; font-family:'Noto Sans KR';}
+.top_cont	 .number { font-size:13px; font-weight: 400; border: 1px solid #646464; border-radius: 5px; width: 35px; text-align: center; padding: 3px; margin: 0 auto}
+.top_cont	.battles  .center { text-align:center;vertical-align: middle }
+.top_cont	.battles  .left { text-align:left; vertical-align: middle }
+.pic_pred {position:relative;overflow:hidden;width:150px;height:150px; margin-top: 5px}
+ .pic_pred img {border-radius:150px; width:150px;}
+.pic_pred.mr17{margin-right:17px}
+.pic_pred.ml17{margin-left:17px}
+.pic_pred .im_boder{position:absolute;display:block;top:0;left:0;right:0;bottom:0;border:1px solid #000;filter:alpha(opacity=12);opacity:0.12;z-index:200}
+.pic_pred .win_label{position:absolute;display:block;top:0;left:0;z-index:99}
+.pic_pred .win_label h6 {width:auto;height:22px;background:url(//img.mk.co.kr/main/2016/bg_org.png) repeat ; font-weight:700;color:#fff;font-size:12px;line-height:15px;letter-spacing:-1px;padding:1px 5px 0;white-space:nowrap}
+.btl_per_con{position:relative; display:table; width:675px; padding-top:8px; margin-left: 15px;margin-right: 15px;  }
+.btl_per_con .vote_per_left,
+.btl_per_con .vote_per_right{display:table-cell}
+.btl_per_con .vote_per_left .vote_per_bar,
+.btl_per_con .vote_per_right .vote_per_bar{width:100%; height:30px}
+.btl_per_con .vote_per_left .vote_per_bar .vote_per{position:absolute; top:0; left:10px}
+.btl_per_con .vote_per_right .vote_per_bar .vote_per{position:absolute; top:0; right:10px; word-break: keep-all;}
+.btl_per_con .vote_per_left .vote_per_bar .vote_per strong,
+.btl_per_con .vote_per_right .vote_per_bar .vote_per strong{display:inline-block; font-size:15px; font-weight:700; color:#fff; letter-spacing:0; line-height:29px}
+.btl_per_con .vote_per_left .vote_per_bar .vote_per em,
+.btl_per_con .vote_per_right .vote_per_bar .vote_per em{display:inline-block; font-size:12px; font-weight:700; color:#fff; letter-spacing:0; line-height:29px; margin:0 0 0 2px}
+ .r_price .li_l1 {width:30%}
+.r_price .li_l2  {width:13%; text-align:center; padding-top: 26px}
+.r_price .li_l3 {width:13%;  text-align:center; padding-top: 20px}
+.r_price .li_l4  {width:13%;  text-align:center; padding-top: 26px}
+ .r_price .li_l5 {width:30%}
+ .ft_rb {font-size:33px; font-weight:700; font-family:Roboto}
+ .ft_rb_s {font-size:18px; font-weight:700; font-family:Roboto}
+.table_battle .pic_pred .winner {position:absolute; top:123px; left:30px; width:88px!important; height:27px!important}
+.dang_s {font-size:12px; line-height: 12px}
+.dang_m {font-size:14px; color: #575757; line-height: 15px}
+.dang_pc { padding: 3px 0 10px 0; position: relative;}
+.dang_pc .winner_s {position:absolute; left:1px; bottom:0; }
+#election_2022 .t_b_tit {font-size: 15px; padding: 5px 0}
+
+.bg_dang01 {background:#004EA2;}
+.bg_dang02 {background:#E61E2B;}
+.bg_dang03 {background:#FFCC00;}
+.bg_dang04 {background:#EA5504;}
+.bg_dang05 {background:#00B1A0;}
+.bg_dang06 {background:#E7141A;}
+.bg_dang07 {background:#02BB71;}
+.bg_dang08 {background:#009944;}
+.bg_dang09 {background:#D6001C;}
+.bg_dang10 {background:#828282;}
+
+.cr_dang01 { color:#004EA2;font-weight:700; font-family:Roboto }
+.cr_dang02 {color:#E61E2B;font-weight:700; font-family:Roboto }
+.cr_dang03 {color:#FFCC00;font-weight:700; font-family:Roboto }
+.cr_dang04 {color:#EA5504;font-weight:700; font-family:Roboto }
+.cr_dang05 {color:#00B1A0;font-weight:700; font-family:Roboto }
+.cr_dang06 {color:#E7141A;font-weight:700; font-family:Roboto }
+.cr_dang07 {color:#02BB71;font-weight:700; font-family:Roboto }
+.cr_dang08 {color:#009944;font-weight:700; font-family:Roboto }
+.cr_dang09 {color:#D6001C;font-weight:700; font-family:Roboto }
+.cr_dang10 {color:#828282;font-weight:700; font-family:Roboto }
+
+.chart2022 { width: 50px; position: relative; overflow: hidden; margin: 30px 0 0 0; margin-left: 15px!important; }
+.chart2022 .gap_vote_graph { display: table; position: relative}
+.chart2022 .gap_vote_graph .fl {float:left;width:20px;height:100px;  display: table-cell}
+.chart2022 .gap_vote_graph .fr {float:right;width:20px;height:100px;  display: table-cell}
+.chart2022 .gap_vote_graph .color01 {position:absolute;bottom:0;width:20px;background-color: #004EA2}
+.chart2022 .gap_vote_graph .color02 {position:absolute;bottom:0;width:20px;background-color: #E61E2B}
+.chart2022 .gap_vote_graph .color03 {position:absolute;bottom:0;width:20px;background-color: #FFCC00}
+.chart2022 .gap_vote_graph .color04 {position:absolute;bottom:0;width:20px;background-color: #EA5504}
+.chart2022 .gap_vote_graph .color05 {position:absolute;bottom:0;width:20px;background-color: #00B1A0}
+.chart2022 .gap_vote_graph .color06 {position:absolute;bottom:0;width:20px;background-color: #E7141A}
+.chart2022 .gap_vote_graph .color07 {position:absolute;bottom:0;width:20px;background-color: #02BB71}
+.chart2022 .gap_vote_graph .color08 {position:absolute;bottom:0;width:20px;background-color: #009944}
+.chart2022 .gap_vote_graph .color09 {position:absolute;bottom:0;width:20px;background-color: #D6001C}
+.chart2022 .gap_vote_graph .color10 {position:absolute;bottom:0;width:20px;background-color: #828282}
+
+.pp_cir50 {width:50px; height:50px; border-radius:100px}
+#election_2022 .top_cont .elect_bigbox  {position: relative; overflow: hidden; margin: 0 auto; width: 1052px;}
+#election_2022 .top_cont .elect_bigbox  li {float: left!important; }
+#election_2022 .top_cont .elect_bigbox  li:first-child {float: left;  margin-left: 2px}
+#election_2022 .top_cont .elect_bigbox .list_box1 {background: #FFFFFF; width: 250px; overflow: hidden;  border-radius:10px; margin-top: 13px}
+#election_2022 .top_cont .elect_bigbox .list_box1 .inner {padding:10px; position: relative; overflow: hidden}
+#election_2022 .top_cont .elect_bigbox .t_b_tit {font-size: 15px; padding: 5px 0}
+#election_2022 .top_cont .elect_bigbox .person {position: relative; clear: both}
+#election_2022 .top_cont .elect_bigbox .person .tb1 {display: table-cell; text-align: center ; float: left; width: 74px}
+#election_2022 .top_cont .elect_bigbox .person .tb2 {text-align: center; float: left; width: 70px; }
+#election_2022 .top_cont .elect_bigbox .person .tb3 {display: table-cell; text-align: center;  position: absolute; right: 0; top: 0}
+#election_2022 .top_cont .elect_bigbox .ft_grade {color: #9a9a9a; font-weight: 700; font-size: 15px; text-align: center; display: inline-block}
+#election_2022 .top_cont .elect_bigbox .thum_person {width: 80px; height: 80px; margin: 3px auto; border-radius:160px}
+#election_2022 .top_cont .elect_bigbox .thum_person .ft_name {font-size: 16px; padding-bottom: 5px; display: inline-block}
+#election_2022 .top_cont .elect_bigbox  .vote_ratesm {display:block;font-size:12px;color:#fff;font-weight:400;padding:3px 8px 5px;border-radius:13px;background-color:#4a5760; float: right}
+#election_2022 .top_cont .elect_bigbox .person .ft_grade1 {font-size:12px; text-align: center; display: inline-block; font-weight:400; padding:3px 8px; border-radius: 5px; border:1px solid #646464;  margin-top: 5px}
+
+
+#election_2022 .top_cont .list_box2 .inner {padding:10px; position: relative; overflow: hidden}
+#election_2022 .top_cont  {padding:10px; background-color:#f0f4fb;letter-spacing:-0.05em; overflow: hidden; margin-top:0; clear:both;}
+
+#election_2022 .top_cont .thum_person {width: 80px; height: 80px; margin: 3px auto; border-radius:160px}
+#election_2022 .top_cont  .ft_name {font-size: 18px; padding-bottom: 10px; display: inline-block; font-weight: 700}
+ .result_w1 {position:relative;padding-left:10px;  display: inline-block}
+ .result_w1 li {float:left;padding-left:10px;  padding-top:30px}
+ .result_w1 li:first-child {float:left;padding-left:12px;  padding-top:0}
+ .result_w1 li h4 {font-size:13px; padding-bottom:5px;}
+
+#election_2022 .top_cont .btn_prev{position:absolute;top:100px;left:0;width:15px;height:15px;z-index:12}
+#election_2022 .top_cont .btn_next{position:absolute;top:100px;right:11px;width:14px;height:15px;z-index:13}
+
+.top_cont .battles .president {position:absolute; left:420px; top:25px; text-align:center;}
+.top_cont .battles .president  .p2022 {width:360px; margin:0 auto}
+.top_cont .battles .president  .p2022  h3 {color:#fff; font-size:19px; font-weight:400; border-radius:20px; padding:8px; background:#17508c; width:195px; text-align:center; margin:0 auto;font-family:'Noto Sans KR';}
+.top_cont .battles .president  .p2022  h3.no_2 {color:#fff; font-size:19px; font-weight:400; border-radius:20px; padding:8px; background:#aa0c14; width:195px; text-align:center; margin:0 auto;font-family:'Noto Sans KR';}
+.top_cont .battles .president  .p2022  h3.no_3 {color:#fff; font-size:19px; font-weight:400; border-radius:20px; padding:8px; background:#be490b; width:195px; text-align:center; margin:0 auto;font-family:'Noto Sans KR';}
+.top_cont .battles .president  .p2022  h3.no_4 {color:#fff; font-size:19px; font-weight:400; border-radius:20px; padding:8px; background:#e18f00; width:195px; text-align:center; margin:0 auto;font-family:'Noto Sans KR';}
+.top_cont .battles  .president  .p2022 .naming {color:#fff!important; font-size:50px!important; font-weight:700; text-align:center; width:100%; font-family:'Noto Sans KR';  line-height:60px;}
+.top_cont .battles .president  .p2022  h5 {color:#fff; font-size:35px;  text-align:center; width:100%; font-weight:400; font-family:'Noto Sans KR'; line-height:45px;}
+.top_cont .battles .president  .p2022 .rate {color:#becee9; font-size:14px; font-weight:400; border-top:1px solid #5494d5; border-bottom:1px solid #5494d5; padding:5px 0; margin-top:8px;font-family:'Noto Sans KR';}
+.top_cont .battles .president  .p2022 .rate2 {color:#e9c4c5; font-size:14px; font-weight:400; border-top:1px solid #d47377; border-bottom:1px solid #d47377; padding:5px 0; margin-top:8px;font-family:'Noto Sans KR';}
+.top_cont .battles .president  .p2022 .rate3 {color:#f8d1c3; font-size:14px; font-weight:400; border-top:1px solid #f39d6f; border-bottom:1px solid #f39d6f; padding:5px 0; margin-top:8px;font-family:'Noto Sans KR';}
+.top_cont .battles .president  .p2022 .rate4 {color:#f7e6c0; font-size:14px; font-weight:400; border-top:1px solid #f1ce5d; border-bottom:1px solid #f1ce5d; padding:5px 0; margin-top:8px;font-family:'Noto Sans KR';}
+
+.president_bt {position:absolute; left:810px; top:60px;}
+.president_bt .wt_btn {border:2px solid #fff; border-radius:30px; padding:15px;font-weight:700; font-family:'Noto Sans KR'; color:#fff; width:180px; text-align:center; font-size:17px}
+.president_bt .wt_btn img {position:relative; left:5px; top:2px}
+.president_bt .wt_btn a:link {color:#fff; text-decoration:none }
+.president_bt .wt_btn a:hover {color:#fff; text-decoration:none }
+.president_bt .wt_btn a:visited {color:#fff; text-decoration:none }
+.top_cont .battles  .bazi {position:absolute; left:230px; top:50px}
+.top_cont .battles  .no1 {background:url(//img.mk.co.kr/raythep/2021/bg_cd_theminjoo.jpg) no-repeat; height:210px;}
+.top_cont .battles  .no2 {background:url(//img.mk.co.kr/raythep/2021/bg_cd_peoplepower.jpg) no-repeat; height:210px;}
+.top_cont .battles  .no3 {background:url(//img.mk.co.kr/raythep/2021/bg_cd_people.jpg) no-repeat; height:210px;}
+.top_cont .battles  .no4 {background:url(//img.mk.co.kr/raythep/2021/bg_cd_justice.jpg) no-repeat; height:210px;}
+#election_2022 .top_cont .ml150 {padding-left:160px!important; padding-top:16px!important}
+#election_2022 .top_cont .ml60 {padding-left:60px!important; padding-top:16px!important}
+.height1 {height:205px;background: #f0f4fb}
+.height2 {height:330px!important;background: #f0f4fb; }
+.height3 {height:122px!important;background: #f0f4fb;}
+
+/* �꾧뎅�숈떆吏�諛⑹꽑嫄� */
+#election_612 {position:relative; width:100%; margin:10px auto 10px!important; text-align:left; font-family:'Noto Sans KR'; }
+#election_612  .toptitle61 {background:url(//img.mk.co.kr/2022/61elect_dday/m/bg_topimg.jpg) no-repeat  0 0; background-size: 100% 100%; text-align:center;
+    height: auto; position:relative;}
+.bt_eletart {position:absolute; left:5px; padding-top: 4px;}
+.img_title61 {margin-left: 8px; height: auto; padding-top: 4px; }
+
+.m_time {position: relative; background: #fff; height: 27px; vertical-align: middle;}
+.m_time .sm_font_t {display: inline-block; color:#845ab8; font-size:12px; position: absolute; left: 10px; top: 4px;}
+.m_time .sm_font_tb {display: inline-block; font-weight: 700;}
+.m_time .sm_font_p {display:inline-block; color: #845ab8; font-weight: 700;
+    font-size: 13px; position: absolute; right: 10px; top: 3px; }
+.m_time .sm_font_pb {display: inline-block; font-size: 12px; vertical-align: middle;}
+
+.vote_rate {position: relative; background: #f0f4fb; clear: both; height: 30px;}
+.m_time .rate {color:#aaa3b2; font-size:12px; position:absolute; left:10px; top:5px;}
+
+.time61 {background:#f0f4fb; width:100%; border-bottom-left-radius:10px; border-bottom-right-radius:10px;
+    height:25px; }
+.time61 .sm_font {display: block; float: right; margin-top: 8px; margin-right: 10px;
+    font-size: 13px; color: #000; font-weight: 200; }
+.time61 .sm_font .time_font {font-weight: 700;}
+.contents61 {background:#f0f4fb; width:100%; border-bottom-left-radius:10px; border-bottom-right-radius:10px;
+    height:290px; }
+.contents61	.in61 {padding:15px 3px; position:relative; }
+.contents61 .im_graph {float:left; width:170px; text-align:center}
+.contents61 .t_tit17 {font-size:17px; font-weight:bold; font-family:'Noto Sans KR'; padding-bottom:10px; padding-top:5px}
+.contents61 .sm_ft14 {font-size:14px; letter-spacing:-0.5px; padding-top:10px; display:block}
+.contents61 .icons {position:absolute; left:-8px; top:-10px}
+.contents61 .im_graph {position: absolute; width: 49%; left: 8px; overflow: hidden;}
+.contents61 .right_cts {position:absolute; width: 49%; right: 10px; overflow: hidden;}
+.contents61 .right_cts .two_loca {width:175px; overflow: hidden; position: relative;}
+.contents61 .right_cts .hw_loca {width:110px; margin: 0 auto;}
+.contents61 .right_cts .loca_on {border: 3px solid #be93eb; border-radius:10px; padding:5px;
+    width: 90px; height:81px; text-align:center; margin-left:4px; margin-top:20px; background:#be93eb; position:relative}
+.contents61 .right_cts .loca_on h4 {padding-top:6px;}
+.contents61 .right_cts .loca_on h3 { font-size:20px; text-align:center; color:#fff}
+.contents61 .right_cts .loca_on .ft15 {font-size:15px}
+.contents61 .right_cts .loca_on .ft11 {font-size:11px; text-align:center;  color:#fff}
+.contents61 .right_cts .loca_off { border: 3px solid #be93eb; border-radius:10px;  padding:5px;
+    width:90px; height:81px; text-align:center; float:left; margin-left:4px; margin-top:30px; background:#fff; position:relative}
+.contents61 .right_cts .loca_off h4 {padding-top:6px;}
+.contents61 .right_cts .loca_off h3 { font-size:20px; text-align:center; color:#333; }
+.contents61 .right_cts .loca_off  .ft15 {font-size:15px;}
+.contents61 .right_cts .loca_off .ft11 {font-size:11px; text-align:center;  color:#333; }
+
+.vote {position: relative; background:#f0f4fb; width:100%; border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;}
+.vote span {display: block; text-align: center; font-weight: 700; padding-bottom: 10px;
+padding-top: 15px; }
+.vote span img {position: absolute; top: 16px; }
+
+
+.rr61 { background: #f0f4fb; width: 100%;}
+.rr61 .tb61 {position: relative; padding-bottom: 20px; padding-top: 20px;}
+.rr61 .tb61 .tb_line {display: table; width: 100%; height: 100px;
+    text-align: center; text-align: ; position: relative;}
+.rr61 .tb61 .tb_line .lc {display: inline-block; width: 17.1%; height: auto;
+    padding: 0px 0px 7px 0px; position: relative; background: #f7e6c0;
+    margin-right: 4px; color: #fff;
+    border: 3px solid #5494d5; border-radius: 10px; }
+.rr61 .tb61 .tb_line .lc_on {background: #be93eb; border: 3px solid #be93eb;}
+.rr61 .tb61 .tb_line .lc_off {background: #fff; border: 3px solid #be93eb; color: #000;}
+.rr61 .tb61 .tb_line .lc_none {background: #f0f4fb; color: #f0f4fb; border: 3px solid #f0f4fb;}
+.rr61 .tb61 .tb_line .lc .each {position: absolute; top: -14px; left: -8px;}
+.rr61 .tb61 .tb_line .lc:last-child {margin-right: 0px;}
+.rr61 .tb61 .tb_line .lc:first-child {}
+.rr61 .tb61 .tb_line .lc h4 {padding-top: 9px; font-size: 15px; margin-bottom: -2px;}
+.rr61 .tb61 .tb_line .lc h3 {display: inline-block; font-size: 14px; }
+.rr61 .tb61 .tb_line .lc .perce {display: inline-block; font-size: 12px;}
+.rr61 .tb61 .tb_line .lc .ft20 {display: block; font-size: 10px;}
+
+
+.contents61_1 {width: 100%; position: relative; background:#f0f4fb; border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px; padding-bottom: 10px;}
+.contents61_1 .table61_1 {position: relative;}
+.contents61_1 .under_loca { display: table; width:100%; overflow: hidden; margin-left: auto;
+    margin-right: auto; text-align: center;}
+.contents61_1 .under_loca .loca {margin: 13px auto; display: inline-block; width: 17%;
+    height: 70px; position: relative; margin-right: 3px;}
+.contents61_1 .under_loca .loca:last-child {margin-right: 0;}
+.loca_on {border: 3px solid #be93eb; border-radius:10px;  padding:5px;text-align:center; margin-left:4px;
+    background:#be93eb; position:relative;}
+.loca_off { border: 3px solid #be93eb; border-radius:10px;  padding:5px; text-align:center; margin-left:4px;
+    background:#fff; position:relative}
+.contents61_1 .under_loca .icons {position: absolute; left: -8px; top: -16px;}
+.contents61_1 .under_loca .loca {float: left;
+    padding: 0px 1px 3px 1px; }
+.contents61_1 .under_loca .loca h4 {margin-top: 4px;}
+.contents61_1 .under_loca .loca h3 { font-size:16px; text-align:center; color:#fff;}
+.contents61_1 .under_loca .loca_off h3 {color: #333;}
+.contents61_1 .under_loca .loca .ft11 {font-size:11px; text-align:center; color:#333; display: block;}
+
+/* elect1 */
+#election_612 {position:relative; clear:both; width:100%; height: auto;
+    margin:10px auto 0px!important;text-align:left; font-family:'Noto Sans KR'; }
+.contents612 {background: #f0f5fb;}
+.contents612 .in612 {padding: 10px; position:relative; overflow:hidden}
+.contents612 .in612 .gnb_m61  {width:390px;}
+.contents612 .in612 .gnb_m61 li {text-align:left; float:left;  margin-left:12px; margin-right:10px}
+.contents612 .in612 .gnb_m61 li:first-child {margin-left: 0;}
+.contents612 .in612 .gnb_m61 li a {position:relative; display:block; letter-spacing:-0.05em; padding:0 3px 5px 3px}
+.contents612 .in612 .gnb_m61 li a:hover {color:#000; text-decoration:none}
+.contents612 .in612 .gnb_m61 li a:hover:before {content:''; position:absolute; bottom:0; left:0; display:block; width:100%; height:3px; background:#845ab8}
+.contents612 .in612 .gnb_m61 li.on a {color:#845ab8!important; font-weight:bold}
+.contents612 .in612 .gnb_m61 li.on a:before {content:''; position:absolute; bottom:0; left:0; display:block; height:3px; background:#845ab8;width:100%;}
+.contents612 .in612 .all {position:absolute; right:10px; top:6px; font-size:11px;}
+.contents612 .in612 .rate {font-size:13px; font-weight:bold; display: block; margin-top: -2px;}
+.contents612 .main_cts {padding: 10px; position:relative; overflow:hidden;}
+.contents612 .main_cts .top_cont {}
+.contents612 .main_cts .top_cont .menu_li {width: 100%; overflow: hidden;
+    white-space: nowrap; overflow-x: scroll; padding-bottom: 7px;}
+.contents612 .main_cts .top_cont .menu_li li {text-align:left;
+    margin-right:10px; border-radius: 15px; padding: 4px 14px; text-align: center;
+    background: #d3daf3; display: inline-block; }
+.contents612 .main_cts .top_cont .menu_li li a {color: #3c4771; font-size: 15px; }
+.contents612 .main_cts .top_cont .menu_li li.on {background: #845ab8; color: #fff;}
+.contents612 .main_cts .top_cont .menu_li li.on a {color: #fff;}
+.contents612 .main_cts .top_cont .menu_li li:first-child {margin-left: 0;}
+
+
+.contents612 .main_cts .top_cont .menu_chip {width: 100%; overflow: hidden; white-space: nowrap; }
+.contents612 .main_cts .top_cont .menu_chip li {text-align:left;
+    margin-right:10px; border-radius: 15px; padding: 4px 14px; text-align: center;
+    background: #d3daf3; display: inline-block; }
+.contents612 .main_cts .top_cont .menu_chip li a {color: #3c4771; font-size: 15px; }
+.contents612 .main_cts .top_cont .menu_chip li.on {background: #845ab8; color: #fff;}
+.contents612 .main_cts .top_cont .menu_chip li.on a {color: #fff;}
+.contents612 .main_cts .top_cont .menu_chip li:first-child {margin-left: 0;}
+.contents612 .battles {background: #fff; border-radius: 10px; position: relative;
+        overflow: hidden; margin-left: 8px; margin-right: 8px; margin-top: 1px; margin-bottom: 10px;
+        padding: 0px; height: 260px; }
+.contents612 .vote_box_2 {}
+.contents612 .vote_box_2 .btn_left_nav {position: absolute; left: 0; top: 85px; z-index: 100;}
+.contents612 .vote_box_2 .btn_right_nav {position: absolute; right: 0; top: 85px; z-index: 100;}
+
+.contents612 .battles .win_icons1 {position: absolute; left: 0; top: 1px; z-index: 100;}
+.contents612 .battles .bt_box {overflow: hidden; position: relative; padding-top: 13px; }
+.contents612 .battles .bt_box .member1 {position:relative; overflow: hidden; height: 180px;}
+.contents612 .battles .bt_box .member1 .name95 {margin-top: 5px;}
+.contents612 .battles .bt_box .member1 .name95 .p_01 {color: #E61E2B; font-size: 14px; font-weight: 700;}
+.contents612 .battles .bt_box .member1 .name95 .p_02 {color: #004ea2; font-size: 14px; font-weight: 700;}
+.contents612 .battles .bt_box .member1 .name95 .ft_black20 {font-size: 19px; font-weight: 700;}
+.contents612 .battles .bt_box .member1 .mem1 { position: absolute; left: 5px; top: 0; text-align: center;}
+.contents612 .battles .bt_box .member1 .mem1 img {width: 103px;}
+.contents612 .battles .bt_box .member1 .pic_pred {width: 103px; height: 103px;}
+.contents612 .battles .bt_box .member1 .mem2 { position: absolute; right: 5px; top: 0; text-align: center;}
+.contents612 .battles .bt_box .member1 .mem2 img {width: 103px;}
+.contents612 .battles .bt_box .member1 .mem_c { width: 100px; text-align: center;
+    background:; height: auto; position: absolute;
+    left: 50%; transform: translate(-50%); top: 5px; padding-top: 8px; vertical-align: top;}
+
+.contents612 .battles .bt_box .member1 .mem_c .c_price1 {font-weight: bold;
+text-align: center; margin-top: 20px;}
+.contents612 .battles .bt_box .member1 .mem_c .c_price1 .ft14 {font-weight: normal; font-size: 13px;}
+.contents612 .battles .bt_box .member1 .mem_c .c_price1 .ft13 {font-size: 12px; font-weight: normal; margin-left: -3px;}
+.contents612 .battles .bt_box .member1 .mem_c .ft13_1 {color: #6f6f6f; font-size: 13px;
+    text-align: center; margin-top: 10px;}
+.contents612 .battles .bt_box .member1 .mem_c .ft13_1 strong {font-weight: bold;}
+.contents612 .battles .bt_box .percent {position: relative; display: table; width: 100%; padding-top: 0px;}
+.contents612 .battles .bt_box .percent .vote_per {color: #fff;}
+.contents612 .battles .bt_box .percent .vote_left {width: 50%; display: table-cell;}
+.contents612 .battles .bt_box .percent .vote_left .vote_bar {width: 100%;
+    height: 30px;}
+.contents612 .battles .bt_box .percent .vote_left .vote_bar .vote_per {position: absolute;
+    top: 3px; left: 10px;}
+.contents612 .battles .bt_box .percent .f01 {color: #c6c6c6; text-align: left; padding-left: 5px; font-size: 13px;}
+.contents612 .battles .bt_box .percent .f02 {color: #c6c6c6; text-align: right; padding-right: 5px; font-size: 13px;}
+.contents612 .battles .bt_box .percent .vote_left .dang01 {background: #004EA2;}
+.contents612 .battles .bt_box .percent .vote_right {width: 50%; display: table-cell; text-align: right;}
+.contents612 .battles .bt_box .percent .vote_right .vote_bar {width: 100%;
+    height: 30px;}
+.contents612 .battles .bt_box .percent .vote_right .vote_bar .vote_per {position: absolute;
+    top: 3px; right: 10px;}
+.contents612 .battles .bt_box .percent .vote_right .dang02 {background: #EA5504;}
+
+.contents612 .vote {position: relative; background: #f0f4fb; width: 100%;}
+.contents612 .vote span {display: block; text-align: center; font-weight: 700; padding-bottom: 10px;}
+.contents612 .vote span img {position: absolute; top: 16px;}
+
+.contents612 .bx { border-radius: 10px; position: relative;
+    overflow: hidden; margin-left: 5px; margin-right: 5px; margin-top: 1px;
+    padding: 15px; height: 110px;}
+.contents612 .bx .bxbx {height: 70px; overflow: hidden;
+    padding-bottom: 15px; }
+.contents612 .bx .bxbx h4 {font-size: 15px; float: left;
+    line-height: 25px; margin-top: 13px;}
+.contents612 .bx .bxbx .scroll_bx {position: absolute; left: 105px; width: 100%;
+    height: 120px; overflow-x: scroll; white-space: nowrap;}
+.contents612 .bx .bxbx dl {display: inline-block; margin-right: 15px; overflow: hidden;
+    padding: 10px 10px; background: #fff; border-radius: 10px;
+    text-align: center; height: 75px; white-space:normal;}
+.contents612 .bx .bxbx dd.hw {font-size: 12px;}
+.contents612 .bx .bxbx .dang1 {font-weight: 700; color: #e61e2b;}
+.contents612 .bx .bxbx .dang2 {font-weight: 700; color: #004ea2;}
+.contents612 .bx .bxbx .dang3 {font-weight: 700; color: #ffcc00;}
+.contents612 .bx .bxbx .dang4 {font-weight: 700; color: #EA5504;}
+.contents612 .bx .bxbx .dang5 {font-weight: 700; color: #00b1A0;}
+.contents612 .bx .bxbx .dang6 {font-weight: 700; color: #e7141a;}
+.contents612 .bx .bxbx .dang7 {font-weight: 700; color: #02BB71;}
+.contents612 .bx .bxbx .dang8 {font-weight: 700; color: #009944;}
+.contents612 .bx .bxbx .dang9 {font-weight: 700; color: #D6001C;}
+.contents612 .bx .bxbx .dang14 {font-weight: 700; color: #8246b5;}
+.contents612 .bx .bxbx .dang10 {font-weight: 700; color: #828282;}
+.contents612 .bx .bxbx .dang11 {font-weight: 700; color: #4E7AD2;}
+.contents612 .bx .bxbx .dang12 {font-weight: 700; color: #E14165;}
+.contents612 .bx .bxbx .dang13 {font-weight: 700; color: #767171;}
+.contents612 .bx .bxbx .dang15 {font-weight: 700; color: #FFF;}
+
+.contents612 .bx .bxbx dl {position: relative; padding: 3px 13px 3px 13px; }
+.contents612 .bx .bxbx dd {max-width: 95px; min-width: 70px; text-align: center;}
+.contents612 .bx .bxbx .haha {color: #fff; position: absolute; top: 45px; left: 50%; transform: translate(-50%);}
+.contents612 .bx .bxbx span {display: block; padding: 1px 3px; border-radius: 8px;}
+.contents612 .bx .bxbx .dda {display: block; height: 40px; overflow: hidden;
+    display: table-cell; vertical-align: middle; line-height: 1; text-align: center;}
+.contents612 .bx .dang_n1 {background: #e61e2b;}
+.contents612 .bx .dang_n2 {background: #004ea2;}
+.contents612 .bx .dang_n3 {background: #ffcc00;}
+.contents612 .bx .dang_n4 {background: #ea5504;}
+.contents612 .bx .dang_n5 {background: #00b1a0;}
+.contents612 .bx .dang_n6 {background: #E7141A;}
+.contents612 .bx .dang_n7 {background: #02BB71;}
+.contents612 .bx .dang_n8 {background: #009944;}
+.contents612 .bx .dang_n9 {background: #D6001C;}
+.contents612 .bx .dang_n14 {background: #8246b5;}
+.contents612 .bx .dang_n10 {background: #828282;}
+.contents612 .bx .dang_n11 {background: #4E7AD2;}
+.contents612 .bx .dang_n12 {background: #E14165;}
+.contents612 .bx .dang_n13 {background: #767171;}
+.contents612 .bx .dang_n15 {background: #FFF;}
+
+
+/* elect1_1 */
+.battles .vote_box_1 {padding: 15px; position: relative;}
+.battles .vote_box_1 .btn_left_nav {position: absolute; left: 0;}
+.battles .vote_box_1 .btn_right_nav {position: absolute; right: 0;}
+.battles .vote_box_1 .mem_c { width: 100px; text-align: center;
+    background: ; height: auto; position: absolute;
+    left: 50%; transform: translate(-50%); top: 25px; padding-top: 15px; vertical-align: top;}
+.battles .vote_box_1 .mem_c .c_location { border: 1px solid #c0c0c0;
+    border-radius: 40px; padding: 5px 15px; font-size: 17px; font-weight: bold;
+    text-align: center; margin-top: 10px;}
+.battles .vote_box_1 .mem_c .renewal {text-align: center; width: 100%;
+padding-top: 60px; color: #A0A0A0; font-weight: bold; font-size: 20px;}
+
+
+/* elect2 */
+#election_612  .toptitle612 {background:url(//img.mk.co.kr/2022/61elect_dday/m/bg_topimg2.jpg) no-repeat  0 0; background-size: 100% 100%; text-align:center;
+    height: auto; position:relative; }
+#election_612  .toptitle612 .bt_eletart {padding-top: 5px;}
+#election_612  .toptitle612 .img_title61 {padding-top: 5px; padding-left: 12px;}
+.contents612 {}
+.contents612 .vote_cont {background: #fff; border-radius: 10px;
+overflow: hidden; height: 300px; margin: 10px;}
+.vote_cont .vote_box {padding: 10px; position: relative; overflow: hidden;
+    text-align: center; height: 290px; margin-top: -15px;}
+.vote_cont .vote_box .btn_left_nav {position: absolute; left: 0;}
+.vote_cont .vote_box .btn_right_nav {position: absolute; right: 0;}
+.battle_base {clear: both; width: 100%; margin: 0 auto; display: table;}
+.battle_base dd {margin-top: 10px;}
+.battle_base .t_battle {width: 100%; overflow: hidden;}
+.battle_base .bt_box {padding: 5px 15px; overflow: hidden; text-align: center;
+    height: 260px;}
+.battle_base .bt_box .result_people {position: relative;
+    width: 100%;}
+.battle_base .bt_box .result_people .peo0 {display: table-cell; width: 49%;
+text-align: center; position: absolute; left: 0;}
+.battle_base .bt_box .result_people .peo1 {display: table-cell; width: 49%;
+text-align: center; position: absolute; right: 0; }
+
+.battle_base .bt_box .c_location {position: relative;
+    border: 1px solid #dcdcdc; border-radius: 16px; display: inline-block;
+    max-width: 140px; margin: 0 auto; text-align: center;}
+.battle_base .bt_box .c_location span { overflow: hidden; height: 32px;
+vertical-align: middle; line-height: 1; text-align: center; display: block;
+display: table-cell; font-weight: 700; font-size: 14px; padding: 3px 3px;
+min-width:50px ;max-width: 125px;}
+.battle_base .bt_box .c_location span { overflow: hidden; height: 32px;}
+
+.battle_base .result_1 {position: relative; width: 100%; padding-top: 5px;
+    overflow: hidden; margin-top: 10px; }
+.battle_base .result_1 li:first-child {padding-left: 0; padding-top: 0;
+    overflow: hidden; margin: auto;}
+.battle_base .result_1 li:nth-child(2) {margin-top: 10px; padding-left: 4px; overflow: hidden;
+ position: relative;}
+.battle_base .result_1 .pic_pred {width:90px; height: 90px; box-sizing: border-box; margin: 0 auto;}
+.battle_base .result_1 .pic_pred img {width:85px; height: 85px; box-sizing: border-box;}
+.battle_base .result_1 li .ft20 {font-size: 20px; font-weight: 700; display: block; }
+.battle_base .result_1 li .dn {width: 120px; font-size: 14.5px; height: 40px;
+    font-weight: 700; color: #e61e2b;  display: block; position: absolute;
+    width: 120px; height: 40px;  position: absolute; left: 50%; transform: translate(-50%);}
+.battle_base .result_1 li .dangname1 {color: #e61e2b; }
+.battle_base .result_1 li .dangname2 {color: #004ea2; }
+.battle_base .dang_circle {padding: 2px; border: 1px solid #d8d8d8; border-radius: 20px;
+clear: both; font-size: 13px; margin-top: 17px;}
+.battle_base .dang_circle strong {font-weight: bold; font-size: 14px;}
+.battle_base .dang_circle .f12 {font-size: 12px;}
+.battle_base .g_gap {color: #ebebeb; font-size: 11px; position: relative; bottom: 2px;}
+.battle_base .dang_circle .f13 {font-size: 11px; margin-top: -3px;}
+
+
+/* main22 */
+.rr61 { background: #f0f4fb; width: 100%;}
+.rr61 .tb61 {position: relative; padding-bottom: 20px; padding-top: 20px;}
+.rr61 .tb61 .tb_line {display: table; width: 100%; height: 100px;
+    text-align: center; text-align: ; position: relative;}
+.rr61 .tb61 .tb_line .lc {display: inline-block; width: 17.1%; height: auto;
+    padding: 0px 0px 7px 0px; position: relative; background: #f7e6c0;
+    margin-right: 4px; color: #fff;
+    border: 3px solid #5494d5; border-radius: 10px; }
+.rr61 .tb61 .tb_line .lc_on {background: #be93eb; border: 3px solid #be93eb;}
+.rr61 .tb61 .tb_line .lc_off {background: #fff; border: 3px solid #be93eb; color: #000;}
+.rr61 .tb61 .tb_line .lc_none {background: #f0f4fb; color: #f0f4fb; border: 3px solid #f0f4fb;}
+.rr61 .tb61 .tb_line .lc .each {position: absolute; top: -14px; left: -8px;}
+.rr61 .tb61 .tb_line .lc:last-child {margin-right: 0px;}
+.rr61 .tb61 .tb_line .lc:first-child {}
+.rr61 .tb61 .tb_line .lc h4 {padding-top: 9px; font-size: 15px; margin-bottom: -2px;}
+.rr61 .tb61 .tb_line .lc h3 {display: inline-block; font-size: 14px; }
+.rr61 .tb61 .tb_line .lc .perce {display: inline-block; font-size: 12px;}
+.rr61 .tb61 .tb_line .lc .ft20 {display: block; font-size: 10px;}
